@@ -1,2 +1,2 @@
 # FAAT
-Foundation for Applied Aeronautics and Technology
+The Foundation for Applied Aviation Technology
