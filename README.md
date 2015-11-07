@@ -1,2 +1,2 @@
 # faat
-Foundation for Applied Aeronautics and 
+Foundation for Applied Aeronautics and Technology
