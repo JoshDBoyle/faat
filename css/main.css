@@ -373,15 +373,11 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .carousel-content {
-  margin-top: 150px;
+  margin-top: 70px;
 }
 
 #main-slider .carousel .slide-margin{
   margin-top: 140px;
-}
-
-#main-slider .carousel h2 {
-  color: #fff;
 }
 
 #main-slider .carousel .btn-slide {
@@ -2529,4 +2525,31 @@ shortcodes page css
 
 
 
+/*
+CUSTOM CSS
+*/
+#main-logo {
+	max-width: 150px;
+}
 
+.item.active {
+	max-height: 550px;
+}
+
+.slide h1 {
+	color: #444444;
+	font-size: 48px;
+}
+
+.slide h2 {
+	color: #777777;
+	font-size: 26px;
+}
+
+#mission {
+	padding-bottom: 0;
+}
+
+#parallax {
+	top: 110px;
+}
