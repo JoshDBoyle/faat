@@ -944,8 +944,8 @@ a.accordion-toggle  i{
   border-bottom: 0 none;
 }
 
-#partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+#mission {
+  background: url(../images/mission-bg.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -1415,12 +1415,13 @@ ul.social_icons li  a i{
 }
 
 .get-started {
-  background: none repeat scroll 0 0 #F3F3F3;
+  background: none repeat scroll 0 0 rgba(200,200,200,0.3);
   border-radius: 3px;
   padding-bottom: 30px;
   position: relative;
-  margin-bottom: 18px;
-  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-height: 150px;
 }
 
 .get-started h2 {
@@ -2537,19 +2538,42 @@ CUSTOM CSS
 }
 
 .slide h1 {
-	color: #444444;
+	color: #333;
 	font-size: 48px;
 }
 
 .slide h2 {
-	color: #777777;
-	font-size: 26px;
+	color: #000;
+	font-size: 28px;
 }
 
 #mission {
 	padding-bottom: 0;
 }
 
-#parallax {
-	top: 110px;
+#donate {
+	margin-top: 5px;
+}
+
+#inspiration section .container img {
+	max-width: 128px;
+	max-height: 128px;
+	float: left;
+	margin-right: 20px;
+}
+
+#inspiration section:nth-child(odd) {
+	background-color: #DDD;
+}
+
+#mission h2 {
+	color: #ECECEC;
+}
+
+#mission h3 {
+	color: #FFF;
+}
+
+#mapDiv div:nth-child(9) {
+	display: none !important;
 }

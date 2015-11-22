@@ -28,27 +28,6 @@
 <body class="homepage">
 
     <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  513.265.6689</p></div>
-                    </div>
-                    <div class="col-sm-6 col-xs-8">
-                       <div class="social">
-                            <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                       </div>
-                    </div>
-                </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
-
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -67,17 +46,25 @@
                         <li><a href="inspiration.html">Inspiration</a></li>
                         <li><a href="education.html">Education</a></li>
                         <li><a href="technology.html">Technology</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>                        
+                        <li><a href="contact-us.html">Contact Us</a></li>  
+                        <li>
+                          <form id="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="QJXWV6CQ6SRVY">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                          </form>
+                        </li>                   
                     </ul>
                 </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+            </div>
+        </nav>
+    </header>
 
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">
             <div class="carousel-inner">
-                <div class="item active" style="background-image: url(images/slide02.png); background-position: fixed;">
+                <div class="item active" style="background-image: url(images/slide05.png); background-position: fixed;">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-8">
@@ -88,8 +75,8 @@
                             </div>
 
                             <div class="col-sm-4 hidden-xs animation animated-item-4">
-                                <div id="parallax" class="slider-img">
-                                    <img src="images/slide01-popup.png" class="img-responsive">
+                                <div class="slider-img">
+                                    <img src="images/slide-popup.png" class="img-responsive">
                                 </div>
                             </div>
                         </div>
@@ -135,12 +122,18 @@
         </div><!--/.container-->
     </section><!--/#feature-->
 
-    <section id="partner">
-        <div id="mission" class="center">                
-            <h2>Our Mission</h2>
-            <h3 class="lead">To advance aviation technology, job creation, and education</h3>
+    <section id="mission">
+        <div class="center container">
+            <div class="get-started center wow fadeInDown" data-wow-duration="1500ms">       
+              <h2>Our Mission</h2>
+              <h3 class="lead">To advance aviation technology, job creation, and education</h3><br><br><br><br>
+            </div>
+            <div class="get-started center wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="750ms">
+              <h2>Who We Are</h2>
+              <h3>The Foundation for Applied Aviation Technology, Inc. (FAAT) is a 501 &copy; (3) non-profit organization under the United States Internal Revenue Code.</h3>
+            </div>
         </div>
-    </section><!--/#partner-->
+    </section>
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
@@ -159,7 +152,7 @@
                 </div>
             </div>
         </div>
-    </footer><!--/#footer-->
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
