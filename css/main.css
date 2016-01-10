@@ -1415,7 +1415,7 @@ ul.social_icons li  a i{
 }
 
 .get-started {
-  background: none repeat scroll 0 0 rgba(200,200,200,0.3);
+  background: none repeat scroll 0 0 rgba(200,200,200,0.5);
   border-radius: 3px;
   padding-bottom: 30px;
   position: relative;
@@ -2576,4 +2576,9 @@ CUSTOM CSS
 
 #mapDiv div:nth-child(9) {
 	display: none !important;
+}
+
+.portfolio-item a {
+	color: #EEE;
+	text-decoration: underline;
 }
