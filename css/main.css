@@ -1417,11 +1417,10 @@ ul.social_icons li  a i{
 .get-started {
   background: none repeat scroll 0 0 rgba(200,200,200,0.5);
   border-radius: 3px;
-  /*padding-bottom: 30px;*/
+  padding-bottom: 0px;
   position: relative;
   margin-bottom: 20px;
   margin-top: 20px;
-  /*max-height: 150px;*/
 }
 
 .get-started h2 {
