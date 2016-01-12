@@ -2600,6 +2600,12 @@ CUSTOM CSS
 .team-member {
     padding: 10px;
 }
+
+.team-member img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
 .member-info {
     position: relative;
     margin: -50px 23px 25px;
