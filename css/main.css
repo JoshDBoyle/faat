@@ -950,6 +950,10 @@ a.accordion-toggle  i{
   background-repeat: repeat;
 }
 
+#mission .team-member a {
+	color: #555;
+}
+
 #partner {
   color: #fff;
   text-align: center;
