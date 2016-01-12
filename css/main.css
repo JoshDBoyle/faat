@@ -945,8 +945,7 @@ a.accordion-toggle  i{
 }
 
 #mission {
-  background: url(../images/mission-bg.png) 50% 50% no-repeat;
-  background-size: cover;
+  background-color: #858585;
 }
 
 #partner {
