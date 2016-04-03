@@ -71,9 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 text-center">
-                        <div class="gmap">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15182.939403968492!2d-84.14362815973583!3d39.34638862347466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840f0795b41cf87%3A0x664affee46dc09df!2s5995+Morrow+Rossburg+Rd%2C+Morrow%2C+OH+45152!5e0!3m2!1sen!2sus!4v1448156887573" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+                        <div class="map"></div>
                     </div>
 
                     <div class="col-sm-7 map-content">
@@ -163,5 +161,145 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            var mapOptions = {
+                zoom: 11,
+                center: new google.maps.LatLng(39.343656,-84.1395057),
+                styles: [
+                         {
+                             "featureType": "administrative",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "off"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "landscape",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "simplified"
+                                 },
+                                 {
+                                     "hue": "#0066ff"
+                                 },
+                                 {
+                                     "saturation": 74
+                                 },
+                                 {
+                                     "lightness": 100
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "poi",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "simplified"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "road",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "simplified"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "road.highway",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "off"
+                                 },
+                                 {
+                                     "weight": 0.6
+                                 },
+                                 {
+                                     "saturation": -85
+                                 },
+                                 {
+                                     "lightness": 61
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "road.highway",
+                             "elementType": "geometry",
+                             "stylers": [
+                                 {
+                                     "visibility": "on"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "road.arterial",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "off"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "road.local",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "on"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "transit",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "simplified"
+                                 }
+                             ]
+                         },
+                         {
+                             "featureType": "water",
+                             "elementType": "all",
+                             "stylers": [
+                                 {
+                                     "visibility": "simplified"
+                                 },
+                                 {
+                                     "color": "#5f94ff"
+                                 },
+                                 {
+                                     "lightness": 26
+                                 },
+                                 {
+                                     "gamma": 5.86
+                                 }
+                             ]
+                         }
+                     ]
+            };
+
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var marker = new google.maps.Marker(
+           		{
+                	position: new google.maps.LatLng(40.6700, -73.9400),
+                	map: map,
+                	title: 'Snazzy!'
+            	});
+        }
+    </script>
+
 </body>
 </html>
