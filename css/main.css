@@ -1923,6 +1923,14 @@ ul.social_icons li  a i{
   /* font-size: 16px; */
 }
 
+#map .gm-style .gmnoprint {
+	display: none !important;
+}
+
+#map .gm-style .gm-svpc {
+	display: none !important;
+}
+
 #contact-page{
   padding-top: 0;
 }
