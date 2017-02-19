@@ -271,17 +271,12 @@ input.search-form:hover {
 }
 
 .navbar-header {
-	display: none;
+	display: block;
 	position: absolute;
 	margin-top: -15px;
 	background-color: #EEE;
 	z-index: 2;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-@media (min-width: 1024px)
-.navbar-header {
-    display: block;
 }
 
  .navbar-nav{
