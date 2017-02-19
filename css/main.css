@@ -4,7 +4,6 @@
 /*************************
 *******Typography******
 **************************/
-
 body {
   background: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -268,6 +267,21 @@ input.search-form:hover {
   background: #151515;
   padding: 15px 0;
   padding-bottom: 0;
+  max-height: 90px;
+}
+
+.navbar-header {
+	display: none;
+	position: absolute;
+	margin-top: -15px;
+	background-color: #EEE;
+	z-index: 2;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+@media (min-width: 1024px)
+.navbar-header {
+    display: block;
 }
 
  .navbar-nav{
@@ -2542,7 +2556,7 @@ shortcodes page css
 CUSTOM CSS
 */
 #main-logo {
-	max-width: 150px;
+	max-width: 300px;
 }
 
 .item.active {
