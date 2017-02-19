@@ -277,9 +277,11 @@ input.search-form:hover {
 	background-color: #EEE;
 	z-index: 2;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 
- .navbar-nav{
+ .navbar-nav {
   margin-top: 12px;
  }
 
