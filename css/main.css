@@ -372,7 +372,16 @@ input.search-form:hover {
 /*************************
 *******Home Page******
 **************************/
-
+.ribbon {
+	position: absolute;
+    z-index: 2;
+    top: 25px;
+    width: 100%;
+    background-color: #C32;
+    color: #DDD;
+    font-weight: bold;
+    font-style: italic;
+}
 
 #main-slider {
   position: relative;
